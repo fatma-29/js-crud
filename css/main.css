@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1, .information{
+border-bottom: 3px dotted black;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    
+    font-weight: 500;
+}
+h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    
+    font-weight: 500;  
+}
+h6{
+    font-family: "Righteous", sans-serif;
+    font-size: 16px;
+    
+    font-weight: 600;   
+}

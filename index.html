@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="pb-5 mt-5 text-center">Bookmarker</h1>
+        <h2 class="text-success text-center mt-4"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i> </h2>
+        <div class="information mt-5 pb-5">
+            <h6 > <i class="fa-solid fa-save fs-6"></i>Site Name</h6>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" oninput="validation(this)" id="markName" placeholder="name@example.com">
+                <div class="alert alert-danger my-1 py-3 d-none">must write three letter </div>
+                <label for="markName">bookmark Name</label>
+              </div>
+              <h6 ><i class="fa-solid fa-link fs-6"></i> Site URL</h6>
+              <div class="form-floating">
+                <input type="email" class="form-control" oninput="validation(this)" id="markUrl" placeholder="Password">
+                <div class="alert alert-danger my-1 py-3 d-none">must contain .com </div>
+                <label for="markUrl">website url</label>
+                <button class="btn-outline-danger mt-4 p-1  rounded-2 d-block m-auto" onclick="addproduct()">submit</button>
+              </div>
+        </div>
+        <table class="table bg-white mt-5">
+            <thead>
+              <tr>
+                <th scope="row">index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+              </thead>
+              <tbody  id="dataTable">
+                
+              </tbody>
+          </table>
+    </div>
+  <script src="js/bootstrap.bundle.min.js"></script>  
+  <script src="js/all.min.js"></script>  
+  <script src="js/main.js"></script>  
+</body>
+</html>
